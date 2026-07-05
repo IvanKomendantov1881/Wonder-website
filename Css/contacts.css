@@ -1,0 +1,592 @@
+/*ОБНУЛЕНИЕ СТИЛЕЙ*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+    font-size:24px;
+    font-family:'SF Pro Display',sans-serif;
+    color: black;
+}
+.body-black{
+    background-color: black;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 4px;
+  }
+::-webkit-scrollbar-thumb{
+    background-color: #121212;
+    height: 450px;
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 256px;
+    color: #333333;
+    font-weight: 400;
+    font-family:'Helvetica';
+}
+h2{
+    font-size: 156px;
+    color: black;
+    font-weight: 400;
+}
+h3{
+    font-size: 54px;
+    font-weight: 400;
+    color: black;
+}
+h4{
+    font-size:42px;
+    font-weight: 600;
+    animation: nav 1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+.container{
+    padding-left:30px ;
+    padding-right:30px;
+}
+header{
+    padding-top: 2.3px;
+}
+/*НАВИГАЦИЯ*//*НАВИГАЦИЯ*/
+/*НАВИГАЦИЯ*//*НАВИГАЦИЯ*/
+/*НАВИГАЦИЯ*//*НАВИГАЦИЯ*/
+.nav-text{
+    display: inline-block;
+    font-weight: 300;
+}
+.text-animate{
+    color: white;
+}
+.h4-animate-bl{
+    color: white;
+}
+.nav-text1{
+    margin-left: 130px;
+}
+.nav-text2{
+    margin-left: 618px;
+    margin-right: 25px;
+}
+.nav-text3{
+    margin-right: 25px;
+}
+.nav-text4{
+    margin-right: 25px;
+}
+.nav-text6{
+    margin-right: 25px;
+    margin-left: 130px;
+}
+.nav-text7{
+    margin-right: 90px;
+}
+.nav-text{
+    animation: nav 1s forwards;
+    opacity: 0;
+}
+@keyframes nav{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.nav-text1{
+    animation-delay: 1.2s;
+}
+.nav-text2{
+    animation-delay: 1.4s;
+}
+.nav-text3{
+    animation-delay: 1.6s;
+}
+.nav-text4{
+    animation-delay: 1.8s;
+}
+.nav-text5{
+    animation-delay: 2s;
+}
+.nav-text6{
+    animation-delay: 2.2s;
+}
+.nav-text7{
+    animation-delay: 2.4s;
+}
+.nav-text8{
+    animation-delay: 2.6s;
+}
+.navigation{
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    margin-top: -55px;
+}
+.navigation-animation-black{
+ top: -60px;
+}
+.navigation-animation-black-js{
+    background-color: white;
+    height: 54px;
+    left: 0;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    transition: all 0.5s ease;
+}
+nav{
+    padding-top: 5px;
+    position: relative;
+    z-index: 10;
+}
+a{
+    position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/  
+}
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text2 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text3 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text4 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text5 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text2:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text3:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text4:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text-after-animate{
+    background-color: white; /*задаём цвет линии*/  
+}
+.nav-text5:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text6:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text2:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text3:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text4:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text5:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text6:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+/*ПЕРВЫЙ ЭКРАН*//*ПЕРВЫЙ ЭКРАН*/
+/*ПЕРВЫЙ ЭКРАН*//*ПЕРВЫЙ ЭКРАН*/
+/*ПЕРВЫЙ ЭКРАН*//*ПЕРВЫЙ ЭКРАН*/
+.main-display{
+    margin-top: 55px;
+    position: relative;
+    z-index: 0;
+}
+.text-wrapper{
+    overflow: hidden;
+    display: block;
+  }
+  .main-text{
+    animation: slideUp 1s forwards;
+    display: inline-block;
+    transform: translateY(70%);
+  }
+  .h1-text-wrepper{
+    color: black;
+    position: relative;
+    z-index: 0;
+  }
+  .h1-text-wrepper .text-wrapper:nth-of-type(1) .main-text{
+    animation-delay: 0s;
+  }
+  .h1-text-wrepper .text-wrapper:nth-of-type(2) .main-text{
+    animation-delay: .15s;
+  }
+  @keyframes slideUp {
+    0% {
+        transform: translateY(150%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+  } 
+.displays{
+    margin-top: 25px;
+    display: flex;
+}
+.display{
+    width: 50%;
+}
+.display2{
+    width: 50%;
+}
+.block1{
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    height: 170px;
+}
+.block2{
+    display: flex;
+    margin-top: 25px;
+    border-bottom: 2px solid black;
+    height: 170px;
+}
+.block3{
+    display: flex;
+    margin-top: 25px;
+    height: 170px;
+}
+.main-text-display{
+    font-size:18px ;
+    color: #7c7c7c;
+}
+.main-text-display2{
+    font-size:18px ;
+    color: #7c7c7c;
+}
+.time{
+    padding-right: 110px;
+}
+.block2 .time-text{
+    width: 125px;
+}
+.time2{
+    padding-right: 73px;
+}
+.addres{
+    padding-right: 70px;
+}
+.addres2{
+    padding-right: 95px;
+}
+.time-text{
+    font-size: 32px;
+}
+.addres-text{
+    font-size: 32px;
+}
+.email-text{
+    font-size: 32px;
+    border-bottom: 2px solid black;
+    width: 258px;
+}
+.slider-container {
+    width: 100%;
+    height:1045px;
+    position: relative;
+    overflow: hidden;
+}
+/* Лента с фото, имеет неограниченную ширину и тип flex, чтобы картинки не переносились */
+.slider-track {
+    height:600px;
+    display: flex;
+    transition-duration: .5s;
+}
+/* Стили для оформления кнопок prev/next */
+.arrow {
+    width:7px;
+    height:7px;
+    border-top:white 2px solid;
+    border-right:white 2px solid;
+    position: absolute;
+}
+.arrow-bg {
+    width:30px;
+    height:30px;
+    background: black;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.2);
+    border-radius: 50%;
+    position: relative;
+    opacity: .8;
+    cursor: pointer;
+}
+.arrow-left .arrow {
+    transform: rotate(-135deg);
+    top:10px;
+    left:12px;
+}
+.arrow-right .arrow {
+    transform: rotate(45deg);
+    top:10px;
+    left:8px;
+}
+.arrow-left {
+    position: absolute;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.arrow-right {
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.item-text{
+    font-size: 42px;
+    padding-left: 30px;
+    margin-bottom: -85px;
+    position: relative;
+    z-index: 8;
+}
+img{
+    position: relative;
+    z-index: 0;
+}
+/*СЕДЬМОЙ ЭКРАН*//*СЕДЬМОЙ ЭКРАН*/
+/*СЕДЬМОЙ ЭКРАН*//*СЕДЬМОЙ ЭКРАН*/
+/*СЕДЬМОЙ ЭКРАН*//*СЕДЬМОЙ ЭКРАН*/
+footer{
+    padding-bottom: 70px;
+    padding-top: 50px;
+    background-color: black;
+}
+footer .logo{
+    color: white;
+    padding-bottom: 5px;
+}
+.line{
+    width: 930px;
+    height: 1px;
+    background-color: #4E4E4E;
+    position: relative;
+    margin-left: 890px;
+}
+.line-animation{
+    animation-name: line;
+    width: 930px;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    margin-left:927px;
+}
+@keyframes line{
+    0%{
+        width:0%;
+    }
+    50%{
+        width:25%;
+    }
+    100%{
+        width:50%;
+    }
+}
+.line2{
+    width: 930px;
+    height: 1px;
+    background-color: #4E4E4E;
+    float: right;
+    margin-top: -1px;
+}
+.line-animation2{
+    animation-name: line ;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    margin-right: 930px;
+}
+.contacts a{
+    color: white;
+    text-decoration: none;
+     border-bottom: 1px white solid;
+    font-size: 26px;
+    line-height: 31px;
+}
+.inf-fot{
+    display: flex;
+    padding-top: 20px;
+}
+.con{
+    padding-right: 50px;
+}
+.site{
+    padding-right: 50px;
+}
+.contacts{
+    display: flex;
+}
+.help{
+    padding-left: 388px;
+}
+.help-main{
+    font-size: 20px;
+    color: white;
+}
+.help-text{
+    padding-top: 14px;
+}
+.help-text a{
+    color: white;
+    text-decoration: none;
+     border-bottom: 1px white solid;
+    font-size: 26px;
+    line-height: 31px;  
+}
+@media(max-width:1600px){
+    a{
+        font-size: 13.3px;
+    }
+    h4{
+        font-size: 35px;
+    }
+    .nav-text1{
+        margin-left: 120px ;
+    }
+    .nav-text2{
+        margin-right: 21px;
+        margin-left: 460px;
+    }
+    .nav-text3{
+        margin-right: 21px; 
+    }
+    .nav-text4{
+        margin-right: 21px; 
+    }
+    .nav-text6{
+        margin-right: 21px; 
+    }
+    .nav-text7{
+        margin-right: 95px;
+    }
+    .navigation-animation-black-js{
+        height: 45px;
+    }
+    .main-text-display{
+        font-size: 15px;
+    }
+    .main-text-display2{
+        font-size: 15px;
+    }
+    .time{
+        padding-right: 100px;
+    }
+    .time-text{
+        font-size: 26.67px;
+    }
+    .addres{
+        padding-right: 100px;
+    }
+    .addres2{
+        padding-right: 115px;
+    }
+    .addres-text{
+        font-size: 26.67px;
+    }
+    .email-text{
+        font-size: 26.67px;
+        width: 214px;
+    }
+    .line-animation{
+        width: 775px;
+        margin-left: 765px;
+    }
+    .line-animation2{
+        margin-right: 775px;
+    }
+}

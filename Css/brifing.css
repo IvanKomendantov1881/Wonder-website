@@ -1,0 +1,556 @@
+/*ОБНУЛЕНИЕ СТИЛЕЙ*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+    font-size:24px;
+    font-family:'SF Pro Display',sans-serif;
+    color: black;
+}
+.body-black{
+    background-color: black;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 4px;
+  }
+::-webkit-scrollbar-thumb{
+    background-color: #121212;
+    height: 450px;
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 256px;
+    color: #333333;
+    font-weight: 400;
+    font-family:'Helvetica';
+}
+h2{
+    font-size: 156px;
+    color: black;
+    font-weight: 400;
+}
+h3{
+    font-size: 54px;
+    font-weight: 400;
+    color: black;
+}
+h4{
+    font-size:42px;
+    font-weight: 600;
+    animation: nav 1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+.container{
+    padding-left:30px ;
+    padding-right:30px;
+}
+header{
+    padding-top: 2.3px;
+}
+/*НАВИГАЦИЯ*//*НАВИГАЦИЯ*/
+/*НАВИГАЦИЯ*//*НАВИГАЦИЯ*/
+/*НАВИГАЦИЯ*//*НАВИГАЦИЯ*/
+.nav-text{
+    display: inline-block;
+    font-weight: 300;
+}
+.text-animate{
+    color: white;
+}
+.h4-animate-bl{
+    color: white;
+}
+.nav-text1{
+    margin-left: 130px;
+}
+.nav-text2{
+    margin-left: 618px;
+    margin-right: 25px;
+}
+.nav-text3{
+    margin-right: 25px;
+}
+.nav-text4{
+    margin-right: 25px;
+}
+.nav-text6{
+    margin-right: 25px;
+    margin-left: 130px;
+}
+.nav-text7{
+    margin-right: 90px;
+}
+.nav-text{
+    animation: nav 1s forwards;
+    opacity: 0;
+}
+@keyframes nav{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.nav-text1{
+    animation-delay: 1.2s;
+}
+.nav-text2{
+    animation-delay: 1.4s;
+}
+.nav-text3{
+    animation-delay: 1.6s;
+}
+.nav-text4{
+    animation-delay: 1.8s;
+}
+.nav-text5{
+    animation-delay: 2s;
+}
+.nav-text6{
+    animation-delay: 2.2s;
+}
+.nav-text7{
+    animation-delay: 2.4s;
+}
+.nav-text8{
+    animation-delay: 2.6s;
+}
+.navigation{
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    margin-top: -55px;
+}
+.navigation-animation-black{
+ top: -60px;
+}
+.navigation-animation-black-js{
+    background-color: white;
+    height: 54px;
+    left: 0;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    transition: all 0.5s ease;
+}
+nav{
+    padding-top: 5px;
+    position: relative;
+    z-index: 10;
+}
+a{
+    position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/  
+}
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text2 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text3 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text4 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text5 {
+	position: relative;
+	cursor: pointer;
+	line-height: 1,7; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+.nav-text:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text2:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text3:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text4:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text-after-animate{
+    background-color: white; /*задаём цвет линии*/  
+}
+.nav-text5:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text6:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav-text:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text2:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text3:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text4:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text5:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.nav-text6:hover:after,
+.katalogtext:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+/*ПЕРВЫЙ ЭКРАН*//*ПЕРВЫЙ ЭКРАН*/
+/*ПЕРВЫЙ ЭКРАН*//*ПЕРВЫЙ ЭКРАН*/
+/*ПЕРВЫЙ ЭКРАН*//*ПЕРВЫЙ ЭКРАН*/
+.main-display{
+    margin-top: 55px;
+    position: relative;
+    z-index: 0;
+}
+.text-wrapper{
+    overflow: hidden;
+    display: block;
+  }
+  .main-text{
+    animation: slideUp 1s forwards;
+    display: inline-block;
+    transform: translateY(70%);
+  }
+  .h1-text-wrepper{
+    color: black;
+    position: relative;
+    z-index: 0;
+  }
+  .h1-text-wrepper .text-wrapper:nth-of-type(1) .main-text{
+    animation-delay: 0s;
+  }
+  .h1-text-wrepper .text-wrapper:nth-of-type(2) .main-text{
+    animation-delay: .15s;
+  }
+  @keyframes slideUp {
+    0% {
+        transform: translateY(150%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+  } 
+input{
+    width: 100%;
+    height: 60px ;
+    font-size: 32px;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-top: 8px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input::placeholder{
+    color: #7c7c7c;
+}
+.input1{
+    margin-top: 30px;
+}
+label input:checked ~ span {
+    box-shadow: 10px 10px 50px rgba(66, 255, 0, 0.67);
+    transition: all 0.5s;
+  }
+/*ВТОРОЙ ЭКРАН*//*ВТОРОЙ ЭКРАН*//*ВТОРОЙ ЭКРАН*/
+/*ВТОРОЙ ЭКРАН*//*ВТОРОЙ ЭКРАН*//*ВТОРОЙ ЭКРАН*/
+/*ВТОРОЙ ЭКРАН*//*ВТОРОЙ ЭКРАН*//*ВТОРОЙ ЭКРАН*/
+.radio-section{
+    padding-top: 90px;
+}
+.main-radio-text{
+    font-size: 24px;
+    color: #7c7c7c;
+}
+.block{
+    display: none;
+    opacity: 0;
+}
+.radio-block{
+    padding-top: 30px;
+}
+.radio span{
+    width: 600px;
+    height: 260px;
+    border-radius: 25px;
+    margin-right: 22.5px;
+    background-image: url(../Img/1.jpg) ;
+    display: inline-block;
+    color: white;
+}
+.radio2 span{
+    width: 600px;
+    height: 260px;
+    border-radius: 25px;
+    margin-right: 22.5px;
+    background-image:url(../Img/2.jpg) ;
+    display: inline-block;
+    color: white;
+}
+.radio3 span{
+    width: 600px;
+    height: 260px;
+    border-radius: 25px;
+    background-image:url(../Img/3.jpg) ;
+    display: inline-block;
+    color: white;
+}
+.radio-text{
+    padding-top: 12px;
+    float: right;
+    padding-right: 12px;
+}
+.input4{
+    margin-top: 50px;
+}
+.button-block{
+    padding-top: 60px;
+}
+.button{
+    width: 100%;
+    height: 60px;
+    border-radius: 25px;
+    border: 2px solid black;
+    outline: none;
+    background-color: white;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+/*СЕДЬМОЙ ЭКРАН*//*СЕДЬМОЙ ЭКРАН*/
+/*СЕДЬМОЙ ЭКРАН*//*СЕДЬМОЙ ЭКРАН*/
+/*СЕДЬМОЙ ЭКРАН*//*СЕДЬМОЙ ЭКРАН*/
+footer{
+    padding-bottom: 70px;
+    padding-top: 50px;
+    background-color: black;
+    margin-top: 120px;
+}
+footer .logo{
+    color: white;
+    padding-bottom: 5px;
+}
+.line{
+    width: 930px;
+    height: 1px;
+    background-color: #4E4E4E;
+    position: relative;
+    margin-left: 890px;
+}
+.line-animation{
+    animation-name: line;
+    width: 930px;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    margin-left:927px;
+}
+@keyframes line{
+    0%{
+        width:0%;
+    }
+    50%{
+        width:25%;
+    }
+    100%{
+        width:50%;
+    }
+}
+.line2{
+    width: 930px;
+    height: 1px;
+    background-color: #4E4E4E;
+    float: right;
+    margin-top: -1px;
+}
+.line-animation2{
+    animation-name: line ;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    margin-right: 930px;
+}
+.contacts a{
+    color: white;
+    text-decoration: none;
+     border-bottom: 1px white solid;
+    font-size: 26px;
+    line-height: 31px;
+}
+.inf-fot{
+    display: flex;
+    padding-top: 20px;
+}
+.con{
+    padding-right: 50px;
+}
+.site{
+    padding-right: 50px;
+}
+.contacts{
+    display: flex;
+}
+.help{
+    padding-left: 388px;
+}
+.help-main{
+    font-size: 20px;
+    color: white;
+}
+.help-text{
+    padding-top: 14px;
+}
+.help-text a{
+    color: white;
+    text-decoration: none;
+     border-bottom: 1px white solid;
+    font-size: 26px;
+    line-height: 31px;  
+}
+/*АДАПТИВ*//*АДАПТИВ*//*АДАПТИВ*/
+/*АДАПТИВ*//*АДАПТИВ*//*АДАПТИВ*/
+/*АДАПТИВ*//*АДАПТИВ*//*АДАПТИВ*/
+/*АДАПТИВ*//*АДАПТИВ*//*АДАПТИВ*/
+/*АДАПТИВ*//*АДАПТИВ*//*АДАПТИВ*/
+@media(max-width:1600px){
+    a{
+        font-size: 13.3px;
+    }
+    h4{
+        font-size: 35px;
+    }
+    .nav-text1{
+        margin-left: 120px ;
+    }
+    .nav-text2{
+        margin-right: 21px;
+        margin-left: 460px;
+    }
+    .nav-text3{
+        margin-right: 21px; 
+    }
+    .nav-text4{
+        margin-right: 21px; 
+    }
+    .nav-text6{
+        margin-right: 21px; 
+    }
+    .nav-text7{
+        margin-right: 95px;
+    }
+    .navigation-animation-black-js{
+        height: 45px;
+    }
+    .hidden-text-div{
+        margin-left: 276px;
+    }
+    .radio span{   
+        width: 500px;
+        height: 240px;
+        border-radius: 20px;
+        margin-right: 14.5px;
+    }
+    .radio2 span{   
+        width: 500px;
+        height: 240px;
+        border-radius: 20px;
+        margin-right: 14.5px;
+    }
+    .radio3 span{   
+        width: 500px;
+        height: 240px;
+    }
+    .line-animation{
+        width: 775px;
+        margin-left: 765px;
+    }
+    .line-animation2{
+        margin-right: 775px;
+    }
+}
